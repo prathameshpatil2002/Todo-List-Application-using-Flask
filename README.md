@@ -9,7 +9,7 @@ This is a backend application for a TODO list, implemented in Python using Flask
 
 ## Installation
 <ul >
-  <li type="1">Clone the repository: `https://github.com/prathameshpatil2002/Todo-List-Application-using-Flask.git`</li>
+  <li type="1">Clone the repository: https://github.com/prathameshpatil2002/Todo-List-Application-using-Flask.git</li>
   <li type="1">Change into the project directory : cd Todo-List-Application-using-Flask</li>
   <li type="1">Install the dependencies : pip install -r requirements.txt</li>
 </ul>
