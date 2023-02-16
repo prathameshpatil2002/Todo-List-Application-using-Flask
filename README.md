@@ -25,12 +25,13 @@ By default, the application will run on http://localhost:5000
 
 The following API endpoints are available:
 
-1. **GET /tasks** - Get a list of all tasks<br><br>
-2. **POST /tasks** - Create a new task<br><br>
-3. **POST /tasks/update/:id** - Update a task<br><br>
-4. **/tasks/delete/:id** - Delete a task<br><br>
-5. **/tasks/complete/:id** - Mark a task as completed<br><br>
-6. **/tasks/incomplete/:id** - Mark a task as incomplete<br><br>
+1. **/** - Default Route shows all tasks completed/incomplete.
+2. **GET /tasks** - Get a list of all tasks<br><br>
+3. **POST /tasks** - Create a new task<br><br>
+4. **POST /tasks/update/:id** - Update a task<br><br>
+5. **/tasks/delete/:id** - Delete a task<br><br>
+6. **/tasks/complete/:id** - Mark a task as completed<br><br>
+7. **/tasks/incomplete/:id** - Mark a task as incomplete<br><br>
 
 ## Example Usage
 
