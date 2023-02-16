@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
-# SQLite Configuration  '///' - relative path
+# SQLite Configuration
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///todo.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -50,7 +50,7 @@ def create_task():
 
 # API for updating Task
 
-@app.route('/tasks/<int:task_id>', methods=['PUT'])
+@app.route('/tasks/update/<int:task_id>', methods=['POST'])
 def update_task(task_id):
     task = Task.query.get(task_id)
     if task is None:
@@ -64,7 +64,7 @@ def update_task(task_id):
 
 # API for deleting Task
 
-@app.route('/tasks/<int:task_id>', methods=['DELETE'])
+@app.route('/tasks/delete/<int:task_id>')
 def delete_task(task_id):
     task = Task.query.get(task_id)
     if task is None:
@@ -76,7 +76,7 @@ def delete_task(task_id):
 
 # API for marking Task Complete
 
-@app.route('/tasks/<int:task_id>/completed', methods=['PUT'])
+@app.route('/tasks/complete/<int:task_id>')
 def mark_task_completed(task_id):
     task = Task.query.get(task_id)
     if task is None:
@@ -88,7 +88,7 @@ def mark_task_completed(task_id):
 
 # API for marking Task incomplete
 
-@app.route('/tasks/<int:task_id>/incomplete', methods=['PUT'])
+@app.route('/tasks/incomplete/<int:task_id>')
 def mark_task_incomplete(task_id):
     task = Task.query.get(task_id)
     if task is None:
