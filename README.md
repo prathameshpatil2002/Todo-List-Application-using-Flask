@@ -29,7 +29,7 @@ The following API endpoints are available:
 2. **POST /tasks** - Create a new task<br><br>
 3. **POST /tasks/update/:id** - Update a task<br><br>
 4. **/tasks/delete/:id** - Delete a task<br><br>
-5. **/tasks/completed/:id** - Mark a task as completed<br><br>
+5. **/tasks/complete/:id** - Mark a task as completed<br><br>
 6. **/tasks/incomplete/:id** - Mark a task as incomplete<br><br>
 
 ## Example Usage
